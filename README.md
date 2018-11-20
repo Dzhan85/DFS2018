@@ -19,7 +19,7 @@ A distributed file system (DFS) is a file system with data stored on a server. T
 
 #### Architecture
 
-
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/DFS%20NEW.png)
 
 ## Installation<a name="installation"></a>
 

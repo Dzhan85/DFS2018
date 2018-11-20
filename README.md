@@ -122,8 +122,53 @@ The client welcomes the user with the command line with the answer: “Type comm
 
 
 
-#### Schemas
+## Configuration and run in Docker
 
+Local host preparations.
+
+Storage service use it use default FTP 21 port for file transfer and rsync over SSH for  synchronization, hosts SSH port 22, and FTP port 21 should be changed if they used.
+
+
+Run image /bin/sh with command:
+
+```
+	#docker run -it --rm --net=host domer/dsproj-storsrv /bin/sh
+	```
+install dependencies
+```
+    #apt update
+    
+    ```
+during ssh installation you will be asked about config file, choose second variant:
+   ``` #apt install  ssh```
+   
+   
+   
+   
+   ```
+    #apt install rsync
+```
+
+Start ssh service:
+```
+    # service ssh start
+    [ ok ] Starting OpenBSD Secure Shell server: sshd.
+```
+
+Start server:
+
+````
+Server has next arguments
+--secsrv, default="127.0.0.1" – server for synchronization
+--homedir, default="/ftpsrv/share/" – FTP home directory
+--user, default="user" – FTP user name
+--passwd, default="12345" – FTP user password
+```
+
+Run server with:
+```
+    #python ftpssrv.py --secsrv <IPv4 of second srver>
+ ```  
 
 
 

@@ -26,10 +26,6 @@ $docker push domer/dsproj-client
 $docker push domer/dsproj-namesrv
 ````
 
-Github repository:
-#git clone https://github.com/Dzhan85/DFS2018.git
-
-
 
 
 ### Running Locally
@@ -38,15 +34,15 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 1. Clone or Download the repository
 
 	```
-	$ git clone https://github.com/Dzhan85/
-	$ cd 
+	$ git clone https://github.com/Dzhan85/DFS2018.git
+	$ cd DFS2018/
 	```
 2. Install Dependencies
 
 	```
-	$ 
+	$ pip install
 	```
-2. Edit configuration file in _app/config/config.json_ with your credentials(see [Setup Configurations](#configurations)).
+2. Generate PKI in folder  with your credentials(see [Setup Configurations](#configurations)).
 3. Download and Install [Redis](http://redis.io/download).
 4. Running Redis Server(as Admin)
 
@@ -65,13 +61,13 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
 ## How It Works<a name="how-it-works"></a>
 
+
+
 ### Setup Configurations<a name="configurations"></a>
 
 
 
 
-
-#### Session
 
 
 

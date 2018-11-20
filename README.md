@@ -3,7 +3,7 @@
 
 sha1sum - f78e38ed30a0473f85b96d0593800e6a39512bb1 
 
-DFS system for Lab assignment by
+DFS system for Lab assignment by Damir, Atadjan and Luis.
 
 
 ![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/dream-team-arrow-tag-sign-260nw-582103660.jpg)
@@ -32,7 +32,7 @@ $docker push domer/dsproj-namesrv
 
 
 ### Running Locally
-Make sure you have [Python](https://www.python.org/downloads/),  and [pip](https://pypi.org/project/pip/) installed.
+Make sure you have [Python](https://www.python.org/downloads/), [pyftpdlib](https://pypi.org/project/pyftpdlib/), [PyOpenSSL](https://pypi.org/project/pyOpenSSL/) and [pip](https://pypi.org/project/pip/) installed.
 
 1. Clone or Download the repository
 

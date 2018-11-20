@@ -46,16 +46,16 @@ Make sure you have [Python](https://www.python.org/downloads/),  and [pip](https
 	$ pip install
 	```
 2. Generate PKI in folder  with your credentials(see [Setup Configurations](#configurations)).
-3. Download and Install [Redis](http://redis.io/download).
-4. Running Redis Server(as Admin)
+
+3. Run Storage Server(as Admin)
 
 	```
-	$ 
+	$ python 
 	``` 
 5. Start the application
 
 	```
-	$ npm start
+	$ python ....
 	```
 
 
@@ -64,6 +64,26 @@ Make sure you have [Python](https://www.python.org/downloads/),  and [pip](https
 
 ## How It Works<a name="how-it-works"></a>
 
+
+###Client
+
+The client welcomes the user with the command line. This command line interface is very similar to native Linux Command Line but has some differences. A supported command are shown in the Table 1:
+
+
+
+| Functionality |  Command | Description |
+| :---: | :----------: |:--------: |
+| Initialize |   `init`   | Initialize system, search a new Name Server in the local network |
+| File Read  |   `rd /path/filename` | This command downloads file to cache |
+| File write |   `wr filename` | Upload file to Storage Service from the cache. |
+| File delete|   `rm /path/filename`| Removing the file from the DFS  |
+| File info  |   `info /path/filename` | Shows date of creating, size of the file and adress of the Storage Server|
+| Open directory |   `cd /pathToFolder   ` or `cd folder ` | Changes current directory. Can be direct and relative path to the folder. Maintains `.` and `..` signs |
+| Read directory |  `ls /path` or `ls`  |  List files and directory  inside the directory  |
+| Make directory |   `mkdir folderName` | Makes a directory in the current    directory  |
+| Delete directory|   `rm folderName`    | Deletes folder if the folder does not exist files.  |
+| Linux Command Line Commands |`nano file`, `more file`, `cat file`, `tail file`| Executes utilities on the file from DFS. Some utilities and commands can be crashed or not working in this mode.  |
+|Exit from DFS | `ex` or `exit` | Exites from the DFS|
 
 
 ### Setup Configurations<a name="configurations"></a>

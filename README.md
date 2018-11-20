@@ -3,7 +3,8 @@
 
 sha1sum - f78e38ed30a0473f85b96d0593800e6a39512bb1 
 
-DFS system for Lab assignment
+DFS system for Lab assignment by
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/dream-team-arrow-tag-sign-260nw-582103660.jpg)
 
 ## Index
 + [Features](#features)

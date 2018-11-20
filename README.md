@@ -47,11 +47,27 @@ Make sure you have [Python](https://www.python.org/downloads/),  and [pip](https
 	```
 2. Generate PKI in folder  with your credentials(see [Setup Configurations](#configurations)).
 
-3. Run Storage Server(as Admin)
+3. Got to Storageserver folder and Run  script Storage Server(as Admin)
 
 	```
-	$ python 
+	$ python ftpssrv.py
+	
 	``` 
+3. Got to Nameserver folder and Run  script (as Admin)	
+	```
+	$ python nameserver.py
+	```
+	
+By specifing IP addresses of storage servers.
+After succesfull connection you will see IP address and port.
+
+3. Got to Client folder and Run  script (as Admin)	
+	```
+	$ python client.py
+	```
+	
+After succesfull connection you will specify IP address and port, which appeared in nameserver initialization.
+	
 5. Start the application
 
 	```
@@ -97,9 +113,10 @@ The client welcomes the user with the command line. This command line interface 
 ### Database<a name="database"></a>
 
 
+
+
 #### Schemas
 
-###
 
 
 

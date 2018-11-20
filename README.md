@@ -131,23 +131,21 @@ Storage service use it use default FTP 21 port for file transfer and rsync over 
 
 Run image /bin/sh with command:
 
-```
+	```
 	#docker run -it --rm --net=host domer/dsproj-storsrv /bin/sh
 	```
 install dependencies
-```
-    #apt update
+    ```#apt update```
     
-    ```
 during ssh installation you will be asked about config file, choose second variant:
+
+
    ``` #apt install  ssh```
    
+   ![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC1.png)
    
    
-   
-   ```
-    #apt install rsync
-```
+   ```#apt install rsync```
 
 Start ssh service:
 ```
@@ -157,7 +155,7 @@ Start ssh service:
 
 Start server:
 
-````
+```
 Server has next arguments
 --secsrv, default="127.0.0.1" – server for synchronization
 --homedir, default="/ftpsrv/share/" – FTP home directory
@@ -166,10 +164,27 @@ Server has next arguments
 ```
 
 Run server with:
-```
-    #python ftpssrv.py --secsrv <IPv4 of second srver>
- ```  
+```#python ftpssrv.py --secsrv <IPv4 of second srver>```  
 
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC2.png)
+
+
+Server started: 
+
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC3.png)
+
+When client connected message will displayed:
+
+
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC4.png)
+
+When disconnected:
+
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC5.png)
+
+To stop server press CTRL-Z:
+
+![Screenshot](https://github.com/Dzhan85/DFS2018/blob/master/SC6.png)
 
 
 

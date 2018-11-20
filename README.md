@@ -1,6 +1,9 @@
 # DFS2018
 
 
+###git show
+commit f78e38ed30a0473f85b96d0593800e6a39512bb1 (HEAD -> master, origin/master)
+
 
 DFS system for Lab assignment
 

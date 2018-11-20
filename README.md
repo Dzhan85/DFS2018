@@ -17,6 +17,8 @@ DFS system for Lab assignment by Damir, Atadjan and Luis.
 ## Features<a name="features"></a>
 A distributed file system (DFS) is a file system with data stored on a server. The data is accessed and processed as if it was stored on the local client machine. The DFS makes it convenient to share information and files among users on a network in a controlled and authorized way. The server allows the client users to share files and store data just like if they were storing the information locally.
 
+#### Architecture
+
 
 
 ## Installation<a name="installation"></a>

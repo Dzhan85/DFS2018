@@ -26,9 +26,15 @@ A distributed file system (DFS) is a file system with data stored on a server. T
  DFS can be tested on the Docker container , it can be pushed from docker cloud or from github repository . To start using,    script should be run. This script starts  with name server. Storage Servers are running by   command. Client needs   command.
 Docker images:
 ```
+push for storage server
 $docker push domer/dsproj-storsrv
+
+push client
 $docker push domer/dsproj-client
+
+push nameserver
 $docker push domer/dsproj-namesrv
+
 ````
 
 
@@ -84,24 +90,23 @@ After succesfull connection you will specify IP address and port, which appeared
 
 
 ###Client
-
-The client welcomes the user with the command line. This command line interface is very similar to native Linux Command Line but has some differences. A supported command are shown in the Table 1:
+The client welcomes the user with the command line with the answer: “Type command”, this command line interface is very similar to native Linux Command Line but has some differences, for example this command interface will recognize only the commands defined in the application, to get a list of supported commands simply needs to type  ‘gethelp’ in the command line and user will see the supported command list like in the Table 1:
 
 
 
 | Functionality |  Command | Description |
 | :---: | :----------: |:--------: |
-| Initialize |   `init`   | Initialize system, search a new Name Server in the local network |
-| File Read  |   `rd /path/filename` | This command downloads file to cache |
-| File write |   `wr filename` | Upload file to Storage Service from the cache. |
-| File delete|   `rm /path/filename`| Removing the file from the DFS  |
-| File info  |   `info /path/filename` | Shows date of creating, size of the file and adress of the Storage Server|
-| Open directory |   `cd /pathToFolder   ` or `cd folder ` | Changes current directory. Can be direct and relative path to the folder. Maintains `.` and `..` signs |
-| Read directory |  `ls /path` or `ls`  |  List files and directory  inside the directory  |
-| Make directory |   `mkdir folderName` | Makes a directory in the current    directory  |
-| Delete directory|   `rm folderName`    | Deletes folder if the folder does not exist files.  |
-| Linux Command Line Commands |`nano file`, `more file`, `cat file`, `tail file`| Executes utilities on the file from DFS. Some utilities and commands can be crashed or not working in this mode.  |
-|Exit from DFS | `ex` or `exit` | Exites from the DFS|
+| Help |   `gethelp`   | List of commands |
+| Space |   `frspace` | know avalaible space |
+| List |   `fllist` | To list folder contains |
+| File delete|   `makedir`| To make new directory  |
+| Directory  |   `chngdir` | Switch directory|
+| Read file |   `readfile ` | To read/download file |
+| Write file |  `writefile`  |  To write/upload file  |
+| Delete file |   `filedel ` | To delete file  |
+| Size |   `filesize`    | To know size of file  |
+| Remove |`remdir`| To remove folder  |
+|Exit from DFS | `ftpsquit` | To close client and DFS|
 
 
 ### Setup Configurations<a name="configurations"></a>

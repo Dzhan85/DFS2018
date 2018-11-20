@@ -32,7 +32,7 @@ $docker push domer/dsproj-namesrv
 
 
 ### Running Locally
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+Make sure you have [Python](https://www.python.org/downloads/),  and [pip](https://pypi.org/project/pip/) installed.
 
 1. Clone or Download the repository
 
